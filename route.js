@@ -79,7 +79,7 @@ router.post("/sendFile", upload.single("file"), async function (req, res) {
   }
 
   let storedfils = JSON.parse(readFileSync("./data.json"));
-  let defaultCover = path.join("cover", "default_cover.png")
+  let defaultCover = "./default_cover.png"
   let albumArt = !coverPath ? defaultCover : coverPath
 
   storedfils.push({
