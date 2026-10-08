@@ -22,7 +22,7 @@ const __dirname = dirname(__filename);
 
 // 🚀 Cleaned up double duplicate CORS initialization syntax
 const corsOptions = {
-  origin: ["http://localhost:5173", "https://vercel.app"],
+  origin: ["http://localhost:5173", "https://bengplayer.vercel.app"],
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true
