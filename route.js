@@ -72,7 +72,7 @@ router.post("/sendFile", upload.single("file"), async function (req, res) {
     const rawData = await readFile(DATA_FILE, "utf-8");
     let storedFiles = JSON.parse(rawData);
     
-    let defaultCover = path.join("cover", "default_cover.png");
+    let defaultCover = "./default_cover.png";
     let albumArt = !coverPath ? defaultCover : coverPath;
 
     storedFiles.push({
